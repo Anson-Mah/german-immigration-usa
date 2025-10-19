@@ -1,0 +1,352 @@
+/* Name: Anson Mah */
+/* Date: 9-10 January, 2024 */
+
+body {
+	background-color: gray;
+}
+
+/* Beginning of Adult Snowman */
+
+/* .adult_snowman can move whole Adult Snowman */
+.adult_snowman {
+	position: relative;
+	top: 50px;
+	left: 250px
+}
+
+/* Beginning of Snowballs */
+.snow {
+	background-color: white;
+	border-radius: 50%;
+	position: relative;
+}
+
+.bottom {
+	width: 250px;
+	height: 250px;
+}
+
+.head {
+	width: 160px;
+	height: 160px;
+	left: 35px;
+	top: 35px;
+}
+
+.torso {
+	width: 200px;
+	height: 200px;
+	left: 20px;
+	top: 25px;
+}
+/* End of Snowballs */
+
+.carrot {
+	width: 0;
+	height: 0;
+	border-left: 6em solid transparent;
+	border-right: 1.5em solid transparent;
+	border-bottom: 2em solid orange;
+	position: relative;
+	bottom: 517px;
+	left: -5px;
+}
+
+.eye {
+	background-color: black;
+	border-radius: 50%;
+	position: relative;
+	width: 20px;
+	height: 20px;
+	bottom: 580px;
+}
+
+.e_left {
+	left: 80px;
+}
+
+.e_right {
+	left: 110px;
+}
+
+.stick {
+	background-color: #964B00;
+	width: 130px;
+	height: 20px;
+	position: relative;
+}
+
+.s_left {
+	bottom: 375px;
+	left: -70px;
+	rotate: -25deg;
+}
+
+.s_right {
+	bottom: 380px;
+	left: 170px;
+	rotate: 35deg;
+}
+
+/* Beginning of Beanie */
+.b_circle {
+	background-color: #FF0000;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	position: relative;
+	bottom: 730px;
+	left: 100px;
+	border: 2px solid #FF0000;
+}
+
+.b_rectangle {
+	background-color: #FF0000;
+	width: 85px;
+	height: 40px;
+	border-radius: 30% 30% 10% 10%;
+	position: relative;
+	bottom: 740px;
+	left: 70px;
+	border: 1px solid #FF0000;
+}
+
+.white_stripe {
+	background-color: white;
+	width: 35px;
+	height: 40px;
+	position: relative;
+	left: 25px;
+	border-radius: 10%;
+	display: flex;
+	align-items: center;
+}
+
+.maple_leaf {
+	height: 25px;
+	margin: auto;
+	color: #9b0202;
+}
+/* End of Beanie */
+
+/* Beginning of Mouth Pieces */
+.mouth {
+	background-color: black;
+	border-radius: 50%;
+	position: relative;
+	width: 17px;
+	height: 17px;
+}
+
+.m1 {
+	bottom: 654px;
+	left: 70px
+}
+
+.m2 {
+	bottom: 654px;
+	left: 90px
+}
+
+.m3 {
+	bottom: 669px;
+	left: 112px
+}
+
+.m4 {
+	bottom: 704px;
+	left: 133px
+}
+/* End of Mouth Pieces */
+
+.button {
+	background-color: black;
+	border-radius: 50%;
+	position: relative;
+	width: 21px;
+	height: 21px;
+	bottom: 630px;
+	left: 71px;
+	margin: 15px;
+}
+
+.scarf {
+	position: relative;
+	bottom: 800px;
+	left: 45px;
+	width: 140px;
+	height: 30px;
+	background-color: #FF0000;
+	border-radius: 30px 30px 0 0;
+}
+
+.scarf_hanging {
+	position: relative;
+	bottom: 800px;
+	left: 130px;
+	width: 30px;
+	height: 105px;
+	background-color: #FF0000;
+	border-radius: 0 0 0.8em 0.8em;
+}
+/* End of Adult Snowman */
+
+/* Beginning of Child Snowman */
+.child_snowman {
+	position: relative;
+	bottom: 770px;
+	left: 50px;
+}
+
+/* Beginning of Snowballs */
+.c_snow {
+	background-color: white;
+	border-radius: 50%;
+	position: relative;
+}
+
+.c_bottom {
+	width: 125px;
+	height: 125px;
+}
+
+.c_head {
+	width: 80px;
+	height: 80px;
+	left: 23px;
+	top: 35px;
+}
+
+.c_torso {
+	width: 100px;
+	height: 100px;
+	left: 13px;
+	top: 25px;
+}
+/* End of Snowballs */
+
+/* Beginning of Eyes */
+.c_eye {
+	background-color: black;
+	border-radius: 50%;
+	position: relative;
+	width: 12px;
+	height: 12px;
+}
+
+.c_e_left {
+	left: 40px;
+	bottom: 245px;
+}
+
+.c_e_right {
+	left: 65px;
+	bottom: 255px;
+}
+/* End of Eyes */
+
+/* Beginning of Sticks */
+.c_stick {
+	background-color: #964B00;
+	width: 55px;
+	height: 10px;
+	position: relative;
+}
+
+.c_s_left {
+	bottom: 175px;
+	left: -25px;
+	rotate: -25deg;
+}
+
+.c_s_right {
+	bottom: 180px;
+	left: 95px;
+	rotate:40deg;
+}
+/* End of Sticks */
+
+.c_button {
+	background-color: black;
+	border-radius: 50%;
+	position: relative;
+	width: 10px;
+	height: 10px;
+	bottom: 220px;
+	left: 45px;
+	margin: 6px;
+}
+
+.c_carrot {
+	width: 0;
+	height: 0;
+	border-left: 2.8em solid transparent;
+	border-right: 0.5em solid transparent;
+	border-bottom: 0.8em solid orange;
+	position: relative;
+	bottom: 325px;
+	left: 15px;
+}
+
+.c_scarf {
+	position: relative;
+	bottom: 310px;
+	left: 25px;
+	width: 75px;
+	height: 15px;
+	background-color: #2A317D;
+	border-radius: 30px 30px 0 0;
+}
+
+.c_scarf_hanging {
+	position: relative;
+	bottom: 315px;
+	left: 75px;
+	width: 15px;
+	height: 60px;
+	background-color: #2A317D;
+	border-radius: 0 0 0.8em 0.8em;
+}
+
+/* Beginning of Beanie */
+.beanie_circle {
+	background-color: white;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	position: relative;
+	bottom: 473px;
+	left: 52px;
+	border: 2px solid #2A317D;
+}
+
+.beanie_rectangle {
+	background-color: #2A317D;
+	width: 55px;
+	height: 20px;
+	border-radius: 30% 30% 10% 10%;
+	position: relative;
+	bottom: 480px;
+	left: 34px;
+	border: 1px solid #2A317D;
+}
+
+.c_white_stripe {
+	background-color: white;
+	width: 21px;
+	height: 21px;
+	position: relative;
+	left: 17px;
+	border-radius: 10%;
+	display: flex;
+	align-items: center;
+}
+
+.coa {
+	height: 15px;
+	margin: auto;
+	color: lightblue;
+}
+/* End of Beanie */
+
+/* End of Child Snowman */

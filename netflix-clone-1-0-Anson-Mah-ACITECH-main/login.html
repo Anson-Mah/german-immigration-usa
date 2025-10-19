@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Venflix | Log In</title>
+  <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+	<nav>
+		<a href="index.html"><img src="assets/images/logo.png" id="logo"></a>
+		<a href="signup.html" class="nav_link">Sign Up</a>
+	</nav>
+	<form onsubmit="alert('You have successfully logged in to Venflix.');">
+		<h1>Log In to Venflix</h1>
+
+		<div>
+	
+			<div>
+				<label for="username">Userame</label>
+				<input autocomplete="username" type="text" id="username" name="username" required placeholder="Username">
+			</div>
+	
+			<div>
+				<label for="password">Password</label>
+				<input autocomplete="current_password" type="password" id="password" name="password" required placeholder="Password">
+			</div>
+
+		</div>
+
+		<div id="login_help_container">
+			<a href="forgot-username.html" class="login_help">Forgot Username?</a>
+			<a href="forgot-password.html" class="login_help">Forgot Password?</a>
+		</div>
+
+		<button>Log In</button>
+	</form>
+</body>
+</html>

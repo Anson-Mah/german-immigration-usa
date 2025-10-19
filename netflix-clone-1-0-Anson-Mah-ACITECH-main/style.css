@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	background-color: rgb(20, 20, 20);
+	color: white;
+}
+
+img {
+	max-width: 100%;
+}
+
+button {
+	border: none;
+	display: flex;
+	padding: 0.75vw 1.5vw;
+	border-radius: 5px;
+	font-size: 1.2vw;
+	font-weight: bold;
+	gap: 10px;
+	align-items: center;
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	color: gray;
+	font-size: 0.8vw;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.row {
+	display: flex;
+	align-items: center;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 1.6vw;
+	margin: 1vw 0;
+}
+
+.description {
+	font-size: 1.2vw;
+}
+
+/**************** Animations ****************/
+
+.rank {
+	transform-origin: center;
+	transition: transform 0.5s ease-in-out;
+}
+
+.rank:hover {
+	transform: scale(1.1);
+}
+
+.content:not(.rank) {
+	transition: rotate 0.75s ease-in-out;
+}
+
+.content:not(.rank):hover {
+	rotate: 180deg;
+}
+
+.brand {
+	transition: transform 0.5s ease-in-out;
+}
+
+.brand:hover {
+	transform: scale(1.2);
+}
+
+.play-btn, .info-btn {
+	transition: background-color 0.3s;
+}
+
+.service-code:hover {
+	color: hsl(0, 0%, 90%);
+}
+
+.service-code {
+	transition: color 0.3s;
+}
+
+.icon {
+	transition: transform 0.35s ease-in-out;
+	cursor: pointer;
+}
+
+.icon:hover {
+	transform: scale(1.2);
+}
+
+.social-icon {
+	transition: color 0.3s;
+}
+
+.social-icon:hover {
+	color: hsl(0, 0%, 100%);
+}
+
+/**************** Nav ****************/
+
+nav {
+	position: fixed;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1.5vw 4vw;
+	font-size: 1.2vw;
+	z-index: 1000;
+	transition: all 0.5s;
+}
+
+.nav-dark {
+	background-color: rgba(20, 20, 20, 0.8);
+	backdrop-filter: blur(10px);
+}
+
+.brand {
+	width: 100px;
+	height: auto;
+	cursor: pointer;
+}
+
+.left {
+	display: flex;
+	align-items: center;
+}
+
+.nav-items {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	gap: 20px;
+	margin-left: 2vw;
+	user-select: none;
+	cursor: pointer;
+}
+
+.nav-icons {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.small {
+	display: none;
+}
+
+.nav-item:not(.icon):hover {
+	text-decoration: underline;
+}
+
+/**************** Top ****************/
+
+.top {
+	height: 56.25vw;
+	width: 100vw;
+	position: relative;
+}
+
+.bg-image {
+	width: 100%;
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+}
+
+.dark-left {
+	background: linear-gradient(77deg, rgba(0,0,0, 0.6), transparent 85%);
+	position: absolute;
+	top: 0;
+	right: 27%;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+}
+
+.dark-bottom {
+	background: linear-gradient(180deg, rgba(20, 20, 20, 0) 0, rgba(20, 20, 20, 0.15) 15%, rgba(20, 20, 20, 0.35) 29%, rgba(20, 20, 20, 0.58) 44%, rgb(20, 20, 20) 68%, rgb(20, 20, 20));
+	position: absolute;
+	bottom: -30px;
+	height: 15vw;
+	opacity: 1;
+	width: 100%;
+	z-index: -1;
+}
+
+.billboard {
+	position: absolute;
+	width: 36%;
+	left: 4%;
+	bottom: 28%;
+}
+
+.billboard img {
+	max-width: 100%;
+}
+
+.buttons {
+	display: flex;
+	gap: 10px;
+	margin-top: 1vw;
+}
+
+.info-btn {
+	background-color: rgba(109, 109, 110, 0.7);
+	color: white;
+}
+
+.play-btn:hover {
+	background-color: rgb(255, 255, 255, 0.75);
+}
+
+.info-btn:hover {
+	background-color: rgb(255, 255, 255, 0.75);
+}
+
+.top .content-row {
+	margin-top: 0;
+	padding-top: 43%;
+}
+
+/**************** Content Row ****************/
+
+.content-row {
+	margin: 3vw 0;
+	padding: 0 4%;
+	gap: 0.5vw;
+}
+
+.content {
+	width: 16vw;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.content img {
+	max-width: 100%;
+	cursor: pointer;
+}
+
+.slider {
+	white-space: nowrap;
+	display: inline-block;
+}
+
+.rank {
+	height: 150px;
+	position: relative;
+}
+
+.rank svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: auto;
+	bottom: 0;
+	width: 50%;
+}
+
+.rank img {
+	position: absolute;
+	top: 0;
+	left: auto;
+	right: 0;
+	bottom: 0;
+	width: 50%;
+	height: 100%;
+	background-size: cover;
+	object-fit: contain;
+}
+
+/**************** Footer ****************/
+
+footer {
+	margin: auto;
+	color: grey;
+	max-width: 9890px;
+	padding: 0 4%;
+	gap: 1vw;
+	margin-top: 140px;
+}
+
+.social-icons {
+	gap: 15px;
+	cursor: pointer;
+}
+
+.social-icon {
+	color: hsl(0, 0, 90);
+	font-size: 0.8vw;
+	scale: 1.5;
+	display: block;
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
+
+.footer-links {
+	flex-wrap: wrap;
+	font-size: 13px;
+	margin: 0 0 14px;
+	align-items: flex-start;
+	display: flex;
+}
+
+.footer-link {
+	display: flex;
+	flex-basis: 25%;
+	margin-bottom: 15px;
+}
+
+.footer-link:hover {
+	text-decoration: none;
+	color: white;
+}
+
+.service-code {
+	background: transparent;
+	border: 1px solid grey;
+	color: grey;
+	font-size: 13px;
+	margin: 0;
+	padding: 0.5vw;
+}
+
+.service-code:hover {
+	background-color: transparent;
+}
+
+.footer-copyright {
+	font-size: 11px;
+	margin-bottom: 15px;
+}
