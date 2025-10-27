@@ -1,0 +1,137 @@
+<!--Name: Anson Mah-->
+<!--Date: 29 May, 2024-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Anson Mah - Cartography Showcase</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+</head>
+
+<style>
+
+	#projects img {
+		border: 3.5px solid black; 
+		margin: 2em; /* Makes the images have some space between each other */
+		margin-top: 0;
+		width: 500px; /* Makes all images the same width */
+	}
+
+	#maps {
+		display: grid;
+		align-items: center;
+	}
+
+	/* Makes use of extra space when there is some available. */
+	@media (min-width: 1200px) {
+		#maps {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+	@media (min-width: 1800px) {
+		#maps {
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+	}
+
+</style>
+
+<body>
+
+	<!--Navbar-->
+	<nav>
+
+		<!--A-Mah Logo-->
+		<a class="logo" href="index.html">
+			<img src="images/signature_white.png" id="logo" height="44" alt="Logo">
+		</a>
+
+		<!--Default Navigation Menu-->
+		<div id="nav_default" class="navigation_menu">
+			<a href="#skills">Skills</a>
+			<a href="#projects">Featured Maps</a>
+    </div>
+
+		<!--Hamburger Button for small screens sizes-->
+		<div id="nav_small_container">
+			<button id="hamburger_button">
+				<svg viewBox="0 0 24 24" height="48" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+					<line x1="3" x2="20" y1="7" y2="7"/>
+					<line x1="3" x2="20" y1="13" y2="13"/>
+					<line x1="3" x2="20" y1="19" y2="19"/>
+				</svg>
+			</button>
+		</div>
+
+	</nav>
+
+	<!--Makes other elements not overlap with the navbar-->
+	<div id="buffer"></div>
+
+	<!--The navigation menu that appears when you click on the hamburger button-->
+	<div id="nav_small" class="navigation_menu">
+		<a href="#projects">Featured Maps</a>
+		<a href="#skills">Skills</a>
+	</div>
+
+	<main>
+
+		<header>
+			<img src="images/id_picture.png" alt="School ID Picture" id="id_picture"> 
+			<span>
+				<h1>Anson Mah</h1>
+				<h3>Welcome to my Cartography Showcase!</h3>
+			</span>
+		</header>
+
+		<!--Section: Projects-->
+		<section id="projects">
+
+			<h1 align="center">Featured Maps</h1>
+			<p align="center" style="margin-top: 0;">Click on a map to view it in full quality</p>
+
+			<div id="maps">
+				<a href="images/maps/germanosphere.png" target="_blank"><img src="images/maps/germanosphere.png" alt="Map of the Germanosphere"></a>
+				<a href="images/maps/tanzania2.png" target="_blank"><img src="images/maps/tanzania2.png" alt="Map of Tanzania"></a>
+				<a href="images/maps/Canada.png" target="_blank"><img src="images/maps/Canada.png" alt="Map of Canada"></a>
+				<a href="images/maps/spain.png" target="_blank"><img src="images/maps/spain.png" alt="Map of Spain"></a>
+				<a href="images/maps/cuba.png" target="_blank"><img src="images/maps/cuba.png" alt="Map of Cuba"></a>
+				<a href="images/maps/serbia.png" target="_blank"><img src="images/maps/serbia.png" alt="Map of Serbia"></a>
+			</div>
+
+		</section>
+
+		<!--Section: Skills-->
+		<section id="skills">
+			<h1 align="center">My Skills</h1>
+			<div id="web_dev_logos">
+
+				<div class="web_dev">
+					<a href="https://qgis.org/" target="_blank"><img height="100" src="images/logos/QGIS.svg"></a>
+					<p align="center"><b>QGIS</b></p>
+				</div>
+
+				<div class="web_dev">
+					<a href="https://www.getpaint.net/" target="_blank"><img height="100" src="images/logos/paint.net.png"></a>
+					<p align="center"><b>paint.net</b></p>
+				</div>
+
+			</div>
+		</section>
+
+
+		<footer>
+			<a href="#top">Back to Top</a>
+			<a href="index.html">Go to Developer Portfolio</a>
+		</footer>
+	</main>
+
+	<script src="script.js"></script>
+
+</body>
+
+</html>

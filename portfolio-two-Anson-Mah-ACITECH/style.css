@@ -1,0 +1,290 @@
+/* Name: Anson Mah */
+/* Date: 28 May, 2024 */
+
+/* Provides a smooth scrolling animation when user clicks on navigation buttons */
+html {
+	scroll-behavior: smooth;
+}
+
+/* Sets font and removes body margin */
+body {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	margin: 0;
+}
+
+/* Makes a rounded box for each section of the portfolio */
+header, section {
+	background-color: hsl(27, 50%, 55%);
+	margin: 1em; /* Gives space between each section. */
+	border: 2px solid grey;
+	border-radius: 20px; /* Rounds the section corners */
+	padding: 0 1.1em 0 0.8em; /* Makes header content not touch section edge */
+}
+
+/* Makes sections have the same width without them taking more space than needed */
+main {
+	display: grid;
+	justify-content: center;
+}
+
+/* ================
+NAVIGATION BAR 
+================ */
+
+/* Places navbar on top of the page and takes up the entire width of the screen */
+nav {
+	position: absolute;
+	width: 100%;
+	background-color: hsl(30, 50%, 55%);
+}
+
+/* Places the logo on the left side of the navbar  */
+#logo {
+	float: left;
+	margin: 3.5px;
+}
+
+.github_link {
+
+	/* Places the Github Logo and the Label next to each other  */
+	display: flex;
+	align-items: center;
+	gap: 1ch;
+
+	/* Sizes the Github Logo */
+	svg {
+		height: 2.5ch;
+	}
+
+	p {
+		margin: 0; 
+	}
+}
+
+/* Makes sure that other elements don't overlap with the navbar */
+#buffer {
+	position: relative;
+	height: 53px;
+	z-index: -1; /* Makes sure the div does not interfere with navigation */
+}
+
+/* ================
+DEFAULT NAVBAR
+================ */
+
+.navigation_menu a {
+	float: right; /* Places navigation menu on the right side of the screen */
+	color: white;
+	padding: 1rem 1rem;
+	text-decoration: none; /* Removes underline when not hovered on */
+  transition: background-color 0.3s; /* Adds color transition on user hover */
+}
+
+/* Darkens a navigation button on hover */
+.navigation_menu a:hover {
+	background-color: hsl(30, 50%, 47%); 
+	text-decoration: underline;
+}
+
+/* ================
+SMALL NAVBAR (HAMBURGER BUTTON)
+================ */
+
+#nav_small_container {
+	display: none; /* Hamburger Button is hidden by default. Media Queries are used to show it when necessary. */
+}
+
+#hamburger_button {
+	float: right; /* Places hamburger button on the right side of the navbar */
+	background-color: hsl(30, 50%, 55%);
+	border: none; /* Removes a weird black border */
+	cursor: pointer; /* Signals to the user that the hamburger button is clickable */
+}
+
+/* Places mini navigation menu close to the hamburger button, but not touching it */
+#nav_small {
+	background-color: hsl(30, 50%, 55%);
+	position: absolute;
+	top: 7ch;
+	right: 1ch;
+	display: none; /* Hides hamburger navigation menu on page load. Javascript is used to show the navigation menu on hamburger button click. */
+}
+
+#nav_small a {
+	text-decoration: none; /* Removes all underlines from the hamburger navigation buttons */
+}
+
+/* Determines when the standard navigation bar turns into a hamburger button */
+@media (max-width: 600px) {
+
+	#nav_default {
+		display: none;
+		width: 0;
+	}
+
+	#nav_small_container {
+		display: block;
+	}
+
+}
+
+/* ================
+HEADER
+================ */
+
+@media (max-width: 500px) {
+	header {
+		flex-direction: column; /* Stacks ID picture and text on top of each other */
+	}
+	
+	#id_picture {
+		align-self: baseline; /* Aligns picture on the same vertical line as the text */
+	}
+	
+	header span {
+		margin: 1em; /* Makes text farther away from the border */
+	}
+}
+
+/* Places ID picture and text next to each other */ 
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#id_picture {
+	border: 1ch solid #434343;
+	height: 250px;
+	margin: 1em; /* Makes ID Picture not touch the border */
+}
+
+h3 {
+	font-size: 1.5em;
+	font-weight: 400;
+}
+
+/* ================
+ABOUT ME
+================ */
+
+#about p {
+	margin: 1em; /* Makes the text not touch the section edges */
+	max-width: 85ch; 
+	font-size: 1.1em;
+}
+
+/* ================
+PROJECTS
+================ */
+
+h2 {
+	font-weight: 600; /* Makes h2 bold but not too bold */
+}
+
+.project {
+	margin: 1.25em; /* Makes project images not touch each other */
+}
+
+.project a {
+	background-color: hsl(0, 55%, 60%);
+	color: white;
+	padding: 1em;
+	transition: background-color 0.3s; /* Adds color transition on user hover */
+	text-decoration: none; /* Removes underline when not hovered on */
+}
+
+/* Changes the button style when hovered */
+.project a:hover {
+	background-color: hsl(0, 45%, 55%);
+	text-decoration: underline;
+}
+
+.project p {
+	margin-bottom: 3.5ch; /* Provides space between project description and button */
+}
+
+/* If screen width is larger than 500px, then the preview image and project information will be next to each other instead of on top of each other. */
+@media (min-width: 500px) {
+	.project {
+		display: flex;
+		justify-content: left;
+		align-items: center;
+		gap: 1.5em;
+	}
+}
+
+/* Centers the projects */
+#projects {
+	display: grid;
+	justify-content: center;
+}
+
+/* ================
+SKILLS
+================ */
+
+/* Centers the logos */
+#web_dev_logos {
+	display: flex;
+	justify-content: center;
+	gap: 1.25em;
+}
+
+/* ================
+CONTACT INFORMATION
+================ */
+
+/* Centering */
+#contact {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#contact a {
+	background-color: hsl(230, 55%, 60%);
+	color: white;
+	padding: 1em;
+	transition: background-color 0.3s; /* Adds color transition on user hover */
+	text-decoration: none; /* Removes underline when not hovered on */
+	border-radius: 1em; /* Rounds the button corners */
+	margin-bottom: 1.25em;
+}
+
+/* Changes the button color when hovered */
+#contact a:hover {
+	background-color: hsl(230, 45%, 54%);
+}
+
+#contact p {
+	margin-top: 0;
+	margin-bottom: 2.5ch;
+}
+
+/* ================
+FOOTER
+================ */
+
+footer {
+	margin: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1em;
+}
+
+footer a {
+	background-color: hsl(25, 50%, 40%);
+	padding: 1em;
+	border: 2px solid grey;
+	border-radius: 20px; /* Rounds the button corners */
+	color: white;
+	text-decoration: none; /* Removes underline when not hovered on */
+}
+
+/* Underlines text on mouse hover */
+footer a:hover {
+	text-decoration: underline;
+}

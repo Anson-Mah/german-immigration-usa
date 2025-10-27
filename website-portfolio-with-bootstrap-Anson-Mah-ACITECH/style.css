@@ -1,0 +1,70 @@
+nav {
+	background-color: rgba(256, 256, 256, 0.9); /* Makes navbar semi-transparent */
+}
+
+#navbarNav {
+	width: auto; /* Removes unncessary space from offcanvas navbar */
+}
+
+#wavy_name {
+	user-select: none; /* Makes "ANSON MAH" text unselectable */
+}
+
+#wavy_name span {
+	display: inline-block; /* Makes text line up horizontally */
+	font-size: 10vw; /* Sizes the wavy name text */
+	animation: move_vertical 2s linear infinite; /* An animation is called that moves the letter up and down */
+	animation-delay: calc(-0.2s*var(--i)); /* A delay is set on each individual letter, forming the wavy effect */
+}
+
+header p {
+	font-size: 3.5vw; /* Sizes the "Welcome to my portfolio!" text */
+}
+
+/* Animation for wavy text */
+@keyframes move_vertical {
+	0% {
+		transform: translateY(0px);
+	}
+	25% {
+		transform: translateY(-1.5vw); 
+	}
+	50% {
+		transform: translateY(0px);
+	}
+	75% {
+		transform: translateY(1.5vw);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+header {
+	height: 85vh; /* Makes the hero section take up the full screen when user visits the page */
+}
+
+section {
+	padding-top: 5em; /* Ensures that when you click on a navbar link, no parts of the section go behind the navbar*/
+}
+
+textarea {
+	height: 10em;
+}
+
+#submit_button {
+	width: 100%;
+}
+
+.social_media_icons {
+	color: hsl(0, 0%, 50%); /* Logos are grey by default */
+	transition: color 0.2s; /* Allows for smooth hover transition */
+
+	/* Moves logos up by 0.5ch */
+	position: relative;
+	bottom: 0.5ch;
+}
+
+.social_media_icons:hover {
+	color: hsl(0, 0%, 0%); /* Icon will turn black when hovered */
+}

@@ -1,0 +1,195 @@
+<!--Name: Anson Mah-->
+<!--Date: 28 May, 2024-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Anson Mah - Developer Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+	<!--Navbar-->
+	<nav>
+
+		<!--A-Mah Logo-->
+		<a class="logo" href="index.html">
+			<img src="images/signature_white.png" id="logo" height="44" alt="Logo">
+		</a>
+
+		<!--Default Navigation Menu-->
+		<div id="nav_default" class="navigation_menu">
+      <a href="https://github.com/Anson-Mah-ACITECH" class="github_link" target="_blank">
+				<svg viewbox="0 0 98 96" fill="white"><path d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"/></svg>
+				<p>Github</p>
+			</a>
+      <a href="#contact">Contact Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+			<a href="#about">About Me</a>
+    </div>
+
+		<!--Hamburger Button for small screens sizes-->
+		<div id="nav_small_container">
+			<button id="hamburger_button">
+				<svg viewBox="0 0 24 24" height="48" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+					<line x1="3" x2="20" y1="7" y2="7"/>
+					<line x1="3" x2="20" y1="13" y2="13"/>
+					<line x1="3" x2="20" y1="19" y2="19"/>
+				</svg>
+			</button>
+		</div>
+
+	</nav>
+
+	<!--Makes other elements not overlap with the navbar-->
+	<div id="buffer"></div>
+
+	<!--The navigation menu that appears when you click on the hamburger button-->
+	<div id="nav_small" class="navigation_menu">
+		<a href="#about">About Me</a>
+		<a href="#projects">Projects</a>
+		<a href="#skills">Skills</a>
+		<a href="#contact">Contact Me</a>
+		<a href="https://github.com/Anson-Mah-ACITECH" class="github_link" target="_blank">
+			<svg viewbox="0 0 98 96" fill="white"><path d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"/></svg>
+			<p>Github</p>
+		</a>
+	</div>
+
+	<main>
+
+		<header>
+			<img src="images/id_picture.png" alt="School ID Picture" id="id_picture"> 
+			<span>
+				<h1>Anson Mah</h1>
+				<h3>Computer Scientist</h3>
+				<h3>Atlantic County Institute of Technology</h3>
+			</span>
+		</header>
+
+		<!--Section: About Me-->
+		<section id="about">
+			<h1 align="center">About Me</h1>
+			<p>
+				I was born and raised in Atlantic City, New Jersey.
+				I am currently enrolled in the Atlantic County Instute of Technology.
+			</p>
+		</section>
+
+		<!--Section: Projects-->
+		<section id="projects">
+			<h1 align="center">Featured Projects</h1>
+
+			<div class="project">
+				<img height="300" src="images/project_previews/annoying_button.png" alt="A screenshot of the Annoying Button">
+				<span>
+					<h2>Annoying Button</h2>
+					<p>The button likes to be clicked on, but not too much. </p>
+					<a href="projects/annoying_button/index.html" target="_blank">View Project</a>
+				</span>
+			</div>
+
+			<div class="project">
+				<img height="300" src="images/project_previews/oceanic_currency_converter.png" alt="A screenshot of the Oceanic Currency Converter">
+				<span>
+					<h2>Oceanic Currency Converter</h2>
+					<p>A useful tool to convert any currency used in Oceania.</p>
+					<a href="projects/currency_converter/index.html" target="_blank">View Project</a>
+				</span>
+			</div>
+
+			<div class="project">
+				<img height="300" src="images/project_previews/solar_system_project.png" alt="A screenshot of the CSS solar system">
+				<span>
+					<h2>CSS Solar System</h2>
+					<p>A solar system with orbiting planets.</p>
+					<a href="projects/html_solar_system_project/index.html" target="_blank">View Project</a>
+				</span>
+			</div>
+
+			<div class="project">
+				<img height="300" src="images/project_previews/quiz_app.png" alt="A screenshot of the Quiz Application">
+				<span>
+					<h2>Quiz Application</h2>
+					<p>Choose to take one of our four available quizzes!</p>
+					<a href="projects/quiz_app/index.html" target="_blank">View Project</a>
+				</span>
+			</div>
+
+			<div class="project">
+				<img height="300" src="images/project_previews/drawing_app.png" alt="A screenshot of the Drawing Program">
+				<span>
+					<h2>Drawing Program</h2>
+					<p>Just your standard drawing app. </p>
+					<a href="projects/drawing_app/index.html" target="_blank">View Project</a>
+				</span>
+			</div>
+
+			<div class="project">
+				<img height="300" src="images/project_previews/pong.png" alt="A screenshot of the Pong game">
+				<span>
+					<h2>Pong Clone</h2>
+					<p>It's just like any other pong game you'll see on the internet.</p>
+					<a href="projects/pong.html" target="_blank">View Project</a>
+				</span>
+			</div>
+
+			<!--
+			<div class="project">
+				<img height="300" src="" alt="A screenshot of the ">
+				<span>
+					<h2>Project Title</h2>
+					<p>Project Description</p>
+					<button onclick="location.href=''">View Project</button>
+				</span>
+			</div>
+			-->
+		</section>
+		<!--Section: Skills-->
+		<section id="skills">
+			<h1 align="center">My Skills</h1>
+			<div id="web_dev_logos">
+
+				<div class="web_dev">
+					<a href="https://html.spec.whatwg.org/" target="_blank"><img height="100" src="images/logos/html5.svg" alt="HTML Logo"></a>
+					<p align="center"><b>HTML</b></p>
+				</div>
+
+				<div class="web_dev">
+					<a href="https://www.w3.org/TR/CSS/" target="_blank"><img height="100" src="images/logos/css3.svg" alt="CSS Logo"></a>
+					<p align="center"><b>CSS</b></p>
+				</div>
+
+				<div class="web_dev">
+					<a href="https://ecma-international.org/publications-and-standards/standards/ecma-262/" target="_blank"><img height="100" src="images/logos/javascript.svg" alt="Javascript Logo"></a>
+					<p align="center"><b>Javascript</b></p>
+				</div>
+
+			</div>
+		</section>
+
+		<!--Section: Contact Information-->
+		<section id="contact">
+			<h1>Contact Me</h1>
+			<p>Let us work together to create something beautiful.</p>
+			<a href="mailto: ansonmah212@gmail.com">Send Email</a>
+		</section>
+
+
+		<footer>
+			<a href="#top">Back to Top</a>
+			<a href="maps.html">Go to Cartography Showcase</a>
+		</footer>
+	</main>
+
+	<script src="script.js"></script>
+
+</body>
+
+</html>
