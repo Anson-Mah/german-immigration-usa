@@ -2,45 +2,145 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>German Immigration to the USA</title>
-	<!--Bootstrap CSS--> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="de.png" type="image/x-icon">
 </head>
 
 <body>
 
 	<!--Navbar-->
-	<nav class="navbar navbar-expand-sm p-3">
-		<!--Flag of Germany-->
-		<a href="#top" class="navbar-brand"><img src="de.png" alt="Flag of Germany" id="flag_de"></a>
+	<nav>
 
-		<!--Hamburger Button-->
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+		<!--A-Mah Logo-->
+		<a class="logo" href="index.html">
+			<img src="de.png" id="logo" alt="Logo">
+		</a>
 
-		<!--Navbar Content-->
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav">
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sections</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-          </ul>
-				</li>
-				<li class="nav-item">
-					<a href="works_cited.html" class="nav-link">Works Cited</a>
-				</li>
-			</ul>
+		<!--Default Navigation Menu-->
+		<div id="nav_default" class="nav_menu">
+			<a href="works_cited.html">Works Cited</a>
+			<a href="primary_source_gallery.html">Primary Source Gallery</a>
+			<a href="tells_the_story.html">???</a>
+			<a href="interactive_map.html">Settlement Patterns</a>
+			<a href="contributions.html">Contributions Made</a>
+			<a href="challenges.html">Challenges Overcame</a>
+			<a href="immigration_process.html">Immigration Process</a>
+			<a href="push_pull_factors.html">Push & Pull Factors</a>
+    </div>
+
+		<!--Hamburger Button for small screens sizes-->
+		<div id="nav_small_container">
+			<button id="hamburger_button">
+				<svg viewBox="0 0 24 24" height="48" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+					<line x1="3" x2="20" y1="7" y2="7"/>
+					<line x1="3" x2="20" y1="13" y2="13"/>
+					<line x1="3" x2="20" y1="19" y2="19"/>
+				</svg>
+			</button>
 		</div>
+
 	</nav>
 
-	<!--Popper--> <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-	<!--Bootstrap Javascript--> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+	<!--Makes other elements not overlap with the navbar-->
+	<div id="buffer"></div>
+
+	<!--The navigation menu that appears when you click on the hamburger button-->
+	<div id="nav_small" class="nav_menu">
+			<a href="push_pull_factors.html">Push & Pull Factors</a>
+			<a href="immigration_process.html">Immigration Process</a>
+			<a href="challenges.html">Challenges Overcame</a>
+			<a href="contributions.html">Contributions Made</a>
+			<a href="interactive_map.html">Settlement Patterns</a>
+			<a href="tells_the_story.html">???</a>
+			<a href="primary_source_gallery.html">Primary Source Gallery</a>
+			<a href="works_cited.html">Works Cited</a>
+	</div>
+
+	<main>
+
+		<header>
+			<h1>GERMAN IMMIGRATION</h1>
+		</header>
+
+		<div class="topics_container">
+
+			<div class="topic topic-image-left">
+				<img height="300" width="300" src="de.png" alt="???">
+				<span>
+					<h2>Push & Pull Factors</h2>
+					<p>Why did Germans feel the need to leave their home country, and what made them choose America?</p>
+					<a href="push_pull_factors.html" target="_blank">Learn More</a>
+				</span>
+			</div>
+
+			<div class="topic topic-image-right">
+				<img height="300" width="300" src="ship.png" alt="???">
+				<span>
+					<h2>Immigration Process</h2>
+					<p>What was the immigration procees like? How did Germans travel here in the first place? What did German immigrants have to do once they stepped foot into America?</p>
+					<a href="immigration_process.html" target="_blank">Learn More</a>
+				</span>
+			</div>
+
+			<div class="topic topic-image-left">
+				<img height="300" width="300" src="de.png" alt="???">
+				<span>
+					<h2>Challenges Overcame</h2>
+					<p>Germans, like many other immigrant groups, have faced many challenges while being in America. What were these challenges, and how did the Germans overcome them?</p>
+					<a href="push_pull_factors.html" target="_blank">Learn More</a>
+				</span>
+			</div>
+
+			<div class="topic topic-image-right">
+				<img height="300" width="300" src="de.png" alt="???">
+				<span>
+					<h2>Contributions Made</h2>
+					<p>Germans have been in the United States for a long time. In this massive timeframe, what have Germans contributed to American society?</p>
+					<a href="immigration_process.html" target="_blank">Learn More</a>
+				</span>
+			</div>
+
+			<div class="topic topic-image-left">
+				<img height="300" width="300" src="de.png" alt="???">
+				<span>
+					<h2>Settlement Patterns</h2>
+					<p>Where did Germans settle once they came to America? Did they stay in rural places or urban places? Did they migrate West? Did they mostly live in the North or the South?</p>
+					<a href="push_pull_factors.html" target="_blank">Learn More</a>
+				</span>
+			</div>
+
+			<div class="topic topic-image-right">
+				<img height="300" width="300" src="de.png" alt="???">
+				<span>
+					<h2>???</h2>
+					<p>A fictional story that tells the story of a German who immigrates to the United States.</p>
+					<a href="tells_the_story.html" target="_blank">Learn More</a>
+				</span>
+			</div>
+
+			<div class="topic topic-image-left">
+				<img height="300" width="300" src="de.png" alt="???">
+				<span>
+					<h2>Primary Source Gallery</h2>
+					<p>A collection of Primary Sources that highlight the experience of a German Immigrant in the USA.</p>
+					<a href="primary_source_gallery.html" target="_blank">View Sources</a>
+				</span>
+			</div>
+
+		</div>
+		
+	</main>
+
+  <footer>
+    <p id="title_footer">GERMAN IMMIGRATION</p>
+    <p class="footer_text"><a href="#top">Go to Top ↑</a></p>
+  </footer>
+
 	<script src="script.js"></script>
+
 </body>
 
 </html>

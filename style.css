@@ -1,3 +1,199 @@
-#flag_de {
-	height: 2em;
+:root {
+  --nav-color: hsl(30, 30%, 35%); /* global scope */
+	--nav-color-darker: hsl(30, 30%, 27%)
+}
+
+/* Provides a smooth scrolling animation when user clicks on navigation buttons */
+html {
+	scroll-behavior: smooth;
+}
+
+/* Sets font and removes body margin */
+body {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	margin: 0;
+	background-color: hsl(0, 0%, 20%);
+	color: white;
+}
+
+/* ================
+NAVIGATION BAR 
+================ */
+
+/* Places navbar on top of the page and takes up the entire width of the screen */
+nav {
+	position: absolute;
+	width: 100%;
+	background-color: var(--nav-color);
+}
+
+/* Places the logo on the left side of the navbar  */
+#logo {
+	float: left;
+	margin: 3.5px;
+	padding: 3.5px;
+	height: 5ch;
+}
+
+/* Makes sure that other elements don't overlap with the navbar */
+#buffer {
+	position: relative;
+	height: 53px;
+	z-index: -1; /* Makes sure the div does not interfere with navigation */
+}
+
+/* ================
+DEFAULT NAVBAR
+================ */
+
+.nav_menu a {
+	float: right; /* Places navigation menu on the right side of the screen */
+	color: white;
+	padding: 1rem 1rem;
+	text-decoration: none; /* Removes underline when not hovered on */
+  transition: background-color 0.3s; /* Adds color transition on user hover */
+	height: 25px;
+}
+
+/* Darkens a navigation button on hover */
+.nav_menu a:hover {
+	background-color: var(--nav-color-darker); 
+	text-decoration: underline;
+}
+
+/* ================
+SMALL NAVBAR (HAMBURGER BUTTON)
+================ */
+
+#nav_small_container {
+	display: none; /* Hamburger Button is hidden by default. Media Queries are used to show it when necessary. */
+}
+
+#hamburger_button {
+	float: right; /* Places hamburger button on the right side of the navbar */
+	background-color: var(--nav-color);
+	border: none; /* Removes a weird black border */
+	cursor: pointer; /* Signals to the user that the hamburger button is clickable */
+}
+
+/* Places mini navigation menu close to the hamburger button, but not touching it */
+#nav_small {
+	display: none; /* Hides hamburger navigation menu on page load. Javascript is used to show the navigation menu on hamburger button click. */
+	background-color: var(--nav-color);
+	position: absolute;
+	top: 8ch;
+	right: 1ch;
+}
+
+/* Determines when the standard navigation bar turns into a hamburger button */
+@media (max-width: 1400px) {
+
+	#nav_default {
+		display: none;
+		width: 0;
+	}
+
+	#nav_small_container {
+		display: block;
+	}
+
+}
+
+/* ================
+HEADER
+================ */
+
+header {
+	text-align: center;
+	color: #FFD800;
+	font-size: 2em;
+}
+
+/* ================
+TOPICS
+================ */
+
+.topics_container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.topic {
+	margin: 1.25em; /* Makes topic images not touch each other */
+}
+
+h2 {
+	font-weight: 600; /* Makes h2 bold but not too bold */
+}
+
+.topic p {
+	margin-bottom: 3.5ch; /* Provides space between topic description and button */
+	max-width: 45ch;
+}
+
+.topic a {
+	background-color: hsl(0, 55%, 60%);
+	color: white;
+	padding: 1em;
+	transition: background-color 0.3s; /* Adds color transition on user hover */
+	text-decoration: none; /* Removes underline when not hovered on */
+}
+
+/* Changes the button style when hovered */
+.topic a:hover {
+	background-color: hsl(0, 45%, 55%);
+	text-decoration: underline;
+}
+
+/* If screen width is larger than 500px, then the preview image and topic information will be next to each other instead of on top of each other. */
+@media (min-width: 500px) {
+
+	.topic-image-left {
+		display: flex;
+		align-items: center;
+		gap: 1.5em;
+	}
+
+	.topic-image-right {
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		gap: 1.5em;
+		text-align: right;
+	}
+
+}
+
+/* ================
+SECTIONS
+================ */
+
+section {
+	text-align: center;
+}
+
+/* ================
+FOOTER
+================ */
+
+footer {
+	background-color: #835828;
+	padding: 0.2em;
+	text-align: center;
+	margin-top: 1em;
+}
+
+#title_footer {
+	font-size: 1.5em;
+}
+
+.footer_text a:link, .footer_text a:visited {
+	color: hsl(0, 0%, 90%);
+	text-decoration: none;
+}
+
+.footer_text a:hover {
+	color: hsl(0, 0%, 90%);
+	text-decoration: underline;
 }
