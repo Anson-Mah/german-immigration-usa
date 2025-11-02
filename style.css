@@ -171,6 +171,18 @@ SECTIONS
 
 section {
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+section p {
+	max-width: 80ch;
+}
+
+section h1 {
+	margin-bottom: 0;
 }
 
 /* ================
@@ -182,6 +194,7 @@ footer {
 	padding: 0.2em;
 	text-align: center;
 	margin-top: 1em;
+	width: 100%;
 }
 
 #title_footer {
