@@ -10,12 +10,22 @@
 </head>
 
 <style>
+	/* section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: auto 3ch;
+	} */
+
 	section {
 		display: grid;
 		grid-template-columns: auto auto;
+		column-gap: 7em;
 		justify-content: center;
-		column-gap: 10em;
-		margin: 1em;
+	}
+
+	.leader_container {
+		text-align: center;
 	}
 
 	.leader {
@@ -61,7 +71,7 @@
 	</nav>
 
 	<!--Makes other elements not overlap with the navbar-->
-	<div id="buffer"></div>
+	<div class="buffer"></div>
 
 	<!--The navigation menu that appears when you click on the hamburger button-->
 	<div id="nav_small" class="nav_menu">
@@ -81,18 +91,18 @@
 
 		<section>
 			
-			<div>
+			<div class="leader_container">
 				<b class="leader">PUSH FACTORS</b>
 				<p>Why did Germans leave their homeland?</p>
 			</div>
 			
-			<div>
+			<div class="leader_container">
 				<b class="leader">PULL FACTORS</b>
 				<p>What made the USA attractive to German Immigrants?</p>
 			</div>
 
 			<div class="push_factor">
-				<h1><u>Antisemitism</u></h1>
+				<h1>Antisemitism</h1>
 				<p>
 					Many German Jews left due to antisemitism in Germany. 
 					Antisemitism especially saw a massive increase when Hitler rised to power. 
@@ -102,7 +112,7 @@
 			</div>
 
 			<div class="pull_factor">
-				<h1><u>Freedom of Religion</u></h1>
+				<h1>Freedom of Religion</h1>
 				<p>
 					The right to practice any religion is protected under the U.S. Constitution. 
 					German Jews find this useful because they would not be as discriminated for being Jewish as compared to in Germany. 
@@ -110,7 +120,7 @@
 			</div>
 
 			<div class="push_factor">
-				<h1><u>German Revolutions of 1848</u></h1>
+				<h1>German Revolutions of 1848</h1>
 				<p>
 					Political refugees flee from their homeland upon the failure of the revolutions. 
 					The failure of the revolutions showed Germans that political reform in their home country would not be feasible for the foreseeable future.
@@ -118,26 +128,18 @@
 			</div>
 
 			<div class="pull_factor">
-				<h1><u>Freedom of Speech</u></h1>
+				<h1>Freedom of Speech</h1>
 				<p>
 					Freedom of Speech is protected under the U.S. Constitution. 
 					Political refugees find this useful because they can voice their political beliefs without having to worry about persecution.
 				</p>
 			</div>
 
-			<div></div>
-
-			<div class="pull_factor">
-				<h1><u>American Recruiters</u></h1>
-				<p>
-					American recruiters put in lots of effort to bring in new immigrants, especially after the U.S. Civil War.
-					The country needed more settlers to make use of the massive amounts of unsettled land and also needed more workers to work in factories.
-				</p>
-			</div>
-
 		</section>
 		
 	</main>
+
+	<div class="buffer"></div>
 
   <footer>
     <p id="title_footer">PUSH & PULL FACTORS</p>

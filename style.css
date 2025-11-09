@@ -39,7 +39,7 @@ nav {
 }
 
 /* Makes sure that other elements don't overlap with the navbar */
-#buffer {
+.buffer {
 	position: relative;
 	height: 53px;
 	z-index: -1; /* Makes sure the div does not interfere with navigation */
@@ -123,10 +123,8 @@ SECTIONS
 ================ */
 
 section {
-	text-align: center;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
 	margin: auto 3ch; /* Horizontal margin of 3ch */
 }
@@ -156,10 +154,6 @@ footer {
 
 #title_footer {
 	font-size: 1.5em;
-}
-
-.footer_text {
-	margin-bottom: 1.5em;
 }
 
 .footer_text a:link, .footer_text a:visited {

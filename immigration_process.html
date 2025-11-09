@@ -9,23 +9,6 @@
 	<link rel="shortcut icon" href="images/de.png" type="image/x-icon">
 </head>
 
-<style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-
-	section p {
-		max-width: 80ch;
-	}
-
-	section h1 {
-		margin-bottom: 0;
-	}
-</style>
-
 <body>
 
 	<!--Navbar-->
@@ -60,7 +43,7 @@
 	</nav>
 
 	<!--Makes other elements not overlap with the navbar-->
-	<div id="buffer"></div>
+	<div class="buffer"></div>
 
 	<!--The navigation menu that appears when you click on the hamburger button-->
 	<div id="nav_small" class="nav_menu">
@@ -79,25 +62,29 @@
 		</header>
 
 		<section>
-			<h1>Before the Move</h1>
-			<p>
-				Many German immigrants spent everything they had to go on board a ship to the United States.
-				In the mid-1800s, this ticket usually costed around 50 German talers, the equivalent to 3 months salary.
-				Families had to save for years to pay for an opportunity to cross the Atlantic.
-			</p>
-		</section>
+			<div>
+				<h1>Before the Move</h1>
+				<p>
+					Many German immigrants spent everything they had to go on board a ship to the United States.
+					In the mid-1800s, this ticket usually costed around 50 German talers, the equivalent to 3 months salary.
+					Families had to save for years to pay for an opportunity to cross the Atlantic.
+				</p>
+			</div>
 
-		<section>
-			<h1>Travelling to America</h1>
-			<p>
-				German immigrants travelled roughly four to six months to reach the USA.
-				Crossing the Atlantic Ocean was often the biggest hurdle in the effort to immigrate. 
-				Often, ships did not provide adequate supplies for the journey such as food and drink. 
-				Many people died in this naval journey, never getting to step foot in American soil.
-			</p>
+			<div>
+				<h1>Travelling to America</h1>
+				<p>
+					German immigrants travelled roughly four to six months to reach the USA.
+					Crossing the Atlantic Ocean was often the biggest hurdle in the effort to immigrate. 
+					Often, ships did not provide adequate supplies for the journey such as food and drink. 
+					Many people died in this naval journey, never getting to step foot in American soil.
+				</p>
+			</div>
 		</section>
 		
 	</main>
+
+	<div class="buffer"></div>
 
   <footer>
     <p id="title_footer">IMMIGRATION PROCESS</p>
