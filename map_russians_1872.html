@@ -11,52 +11,10 @@
 
 <body>
 
-	<!--Navbar-->
-	<nav>
-
-		<!--Germany Flag Logo-->
-		<a class="logo" href="index.html">
-			<img src="images/de.png" id="logo" alt="Logo">
-		</a>
-
-		<!--Default Navigation Menu-->
-		<div id="nav_default" class="nav_menu">
-			<a href="works_cited.html">Works Cited</a>
-			<a href="interactive_map.html">Settlement Patterns</a>
-			<a href="contributions.html">Contributions Made</a>
-			<a href="challenges.html">Challenges Overcame</a>
-			<a href="immigration_process.html">Immigration Process</a>
-			<a href="push_pull_factors.html">Push & Pull Factors</a>
-    </div>
-
-		<!--Hamburger Button for small screens sizes-->
-		<div id="nav_small_container">
-			<button id="hamburger_button">
-				<svg viewBox="0 0 24 24" height="48" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-					<line x1="3" x2="20" y1="7" y2="7"/>
-					<line x1="3" x2="20" y1="13" y2="13"/>
-					<line x1="3" x2="20" y1="19" y2="19"/>
-				</svg>
-			</button>
-		</div>
-
-	</nav>
-
-	<!--Makes other elements not overlap with the navbar-->
-	<div class="buffer"></div>
-
-	<!--The navigation menu that appears when you click on the hamburger button-->
-	<div id="nav_small" class="nav_menu">
-		<a href="push_pull_factors.html">Push & Pull Factors</a>
-		<a href="immigration_process.html">Immigration Process</a>
-		<a href="challenges.html">Challenges Overcame</a>
-		<a href="contributions.html">Contributions Made</a>
-		<a href="interactive_map.html">Settlement Patterns</a>
-		<a href="works_cited.html">Works Cited</a>
-	</div>
+	<!--NAVBAR-->
+	<div w3-include-html="navbar.html"></div>
 
 	<main>
-
 		<header>
 			<h1 style="margin-bottom: 0;">RUSSIAN-GERMANS (1872)</h1>
 		</header>
@@ -68,39 +26,10 @@
 				These farmers settled out West, particularly in the Dakotas, Nebraska, and Colorado, where more farmland was available.
 			</p>
 		</section>
-		
 	</main>
 
-	<main>
-
-		<header>
-			<h2 style="margin-bottom: 0;">SETTLEMENT PATTERNS</h2>
-		</header>
-
-		<section>
-			<p style="max-width: 85ch;">
-				Throughout all of United States history, Germans have always been immigrating to the nation. 
-				German immigration can be categorized into several different “immigration waves”, 
-				each with differing characteristics but all share German ancestry.
-			</p>
-
-			<p style="max-width: 100ch;">Click on the buttons to learn about these immigration waves, and where Germans settled at different times. </p>
-		</section>
-
-		<section>
-
-			<img style="width: 1000px;" src="images/usa_map.png" alt="Interactive Map of the USA" usemap="#immigration_map">
-
-			<map name="immigration_map">
-				<area shape="circle" coords="390, 210, 35" title="Russian-Germans (1872)" href="map_russians_1872.html">
-				<area shape="circle" coords="620, 220, 35" title="48ers (1848)" href="map_48ers_1848.html">
-				<area shape="circle" coords="810, 200, 35" title="Quakers (1683)" href="map_quakers_1683.html">
-				<area shape="circle" coords="765, 255, 35" title="Hessian Soldiers (1776)" href="map_hessian_soldiers_1776.html">
-			</map>
-
-		</section>
-		
-	</main>
+	<!--SETTLEMENT PATTERNS MENU-->
+	<div w3-include-html="map_settlement.html"></div>
 
 	<div class="buffer"></div>
 
